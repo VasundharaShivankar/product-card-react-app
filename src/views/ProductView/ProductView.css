@@ -1,0 +1,40 @@
+.main-heading{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}.ProductView{ 
+    background-color: #8fff85;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #fffca5 100%); 
+   padding: 40px;
+}
+.ProductView-title {
+    margin: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+.ProductView-price{
+    margin-left:150px;
+    font-weight: 500;
+}
+.ProductView-img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+.ProductView-author{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left:150px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    width:30%;
+}
+.ProductView-content{
+    margin: 10px 150px;
+    font-size: 20px;
+    padding:10px;
+}

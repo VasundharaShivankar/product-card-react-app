@@ -1,31 +1,31 @@
 import React from 'react'
 import "./Home.css"
 import blogs from "./../../data"
-import Blogcards from '../../components/Blogcards/Blogcards'
+import ProductCards from '../../components/ProductCards/ProductCards'
 
 function Home() {
   return (<>
-    <h1 className="page-title">Blogs</h1>
+    <h1 className="page-title">Products</h1>
     <div className="blogs-container">
       {
-        blogs.map((blogData, i) => {
+        blogs.map((productData, i) => {
           const {
             id,
             title,
-            content,
-            author,
-            date,
-            categories
-          } = blogData
+            image,
+            description,
+            price,
+            instructions
+          } = productData
 
-          return (<Blogcards
+          return (<ProductCards
             key={i}
             id={id}
+            image={image}
             title={title}
-            content={content}
-            author={author}
-            date={date}
-            categories={categories}
+            description={description}
+            price={price}
+            instructions={instructions}
           />)
         })
       }
